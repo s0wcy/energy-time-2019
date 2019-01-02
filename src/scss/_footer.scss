@@ -7,8 +7,8 @@ footer {
     height: auto;
     position: fixed;
     bottom: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: $blue;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $cream;
 }
 
 .footer-part {
@@ -18,11 +18,13 @@ footer {
     padding: 1rem 0;
     width: 75%;
     height: auto;
-    color: $white;
+    color: $blue;
 }
 
 /* upper footer */
-.footer-part.upper-footer { background-color: $blue; }
+.footer-part.upper-footer {
+    height: 16rem;
+}
 
 .upper-footer .upper-footer-el {
     display: flex;
@@ -30,7 +32,8 @@ footer {
     align-items: flex-start;
     flex-direction: column;
     width: 25%;
-    height: 10rem;
+    height: 100%;
+    position: relative;
 }
 
 .upper-footer .upper-footer-el:not(:last-child) { margin-right: 1rem; }
@@ -40,6 +43,8 @@ footer {
     text-transform: uppercase;
     user-select: none;
     position: relative;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .upper-footer .footer-title::before {
@@ -47,8 +52,36 @@ footer {
     width: 1rem;
     height: 0.2rem;
     position: absolute;
-    bottom: -0.2rem;
-    background-color: #fff;
+    bottom: -0.3rem;
+    background-color: $blue;
+}
+
+.upper-footer .footer-part-el { margin: 0.4rem 0; }
+
+/* icons */
+.footer-icon {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: -1.4rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon-location { background-image: url("../src/medias/img/icons/map-pin.svg"); }
+.icon-mail { background-image: url("../src/medias/img/icons/mail.svg"); }
+.icon-phone { background-image: url("../src/medias/img/icons/phone.svg"); }
+.icon-fax { background-image: url("../src/medias/img/icons/file-text.svg"); }
+
+.footer-logo {
+    display: block;
+    width: 11rem;
+    height: 4.5rem;
+    background-size: cover;
+    background-image: url("../src/medias/img/logo-premium-contact-2017-2.png");
 }
 
 /* lower footer */
@@ -56,7 +89,16 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $dark-blue;
+    width: 100%;
+    height: 4rem;
+    background-color: $white;
+    font-size: 14px;
+    font-weight: 600;
     user-select: none;
     text-transform: uppercase;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+
 }

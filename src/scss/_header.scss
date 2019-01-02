@@ -1,0 +1,76 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 6rem;
+    padding: 0 1rem;
+    background-color: $white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-el {
+    
+}
+
+.header-logo {
+    width: 13.5rem;
+    height: 4rem;
+    background-image: url("../src/medias/img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 65%;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $blue;
+}
+
+.header-nav-el {
+    position: relative;
+    transition: cubic-bezier(0.65, 0.01, 0.46, 1) 0.2s;
+}
+.header-nav-el:hover { color: $red; }
+
+.header-nav-el::after {
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    background-color: $red;
+    transition: cubic-bezier(0.65, 0.01, 0.46, 1) 0.2s;
+}
+
+.header-nav-el:hover::after {
+    width: 100%;
+}
+
+.header-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 10%;
+    height: 100%;
+}
+
+.header-login-el {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon-login { background-image: url("../src/medias/img/icons/log-in.svg"); }
+.icon-register { background-image: url("../src/medias/img/icons/user-plus.svg"); }
+.icon-member { background-image: url("../src/medias/img/icons/lock.svg"); }

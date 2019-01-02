@@ -9,6 +9,78 @@ a {
   color: inherit;
   text-decoration: none; }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 6rem;
+  padding: 0 1rem;
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif; }
+
+.header-logo {
+  width: 13.5rem;
+  height: 4rem;
+  background-image: url("../src/medias/img/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 65%;
+  height: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #073C53; }
+
+.header-nav-el {
+  position: relative;
+  transition: cubic-bezier(0.65, 0.01, 0.46, 1) 0.2s; }
+
+.header-nav-el:hover {
+  color: #E22230; }
+
+.header-nav-el::after {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  background-color: #E22230;
+  transition: cubic-bezier(0.65, 0.01, 0.46, 1) 0.2s; }
+
+.header-nav-el:hover::after {
+  width: 100%; }
+
+.header-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 10%;
+  height: 100%; }
+
+.header-login-el {
+  width: 1.8rem;
+  height: 1.8rem;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.icon-login {
+  background-image: url("../src/medias/img/icons/log-in.svg"); }
+
+.icon-register {
+  background-image: url("../src/medias/img/icons/user-plus.svg"); }
+
+.icon-member {
+  background-image: url("../src/medias/img/icons/lock.svg"); }
+
 footer {
   display: flex;
   justify-content: flex-end;
@@ -18,8 +90,8 @@ footer {
   height: auto;
   position: fixed;
   bottom: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #073C53; }
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9; }
 
 .footer-part {
   display: flex;
@@ -28,11 +100,11 @@ footer {
   padding: 1rem 0;
   width: 75%;
   height: auto;
-  color: #fff; }
+  color: #073C53; }
 
 /* upper footer */
 .footer-part.upper-footer {
-  background-color: #073C53; }
+  height: 16rem; }
 
 .upper-footer .upper-footer-el {
   display: flex;
@@ -40,7 +112,8 @@ footer {
   align-items: flex-start;
   flex-direction: column;
   width: 25%;
-  height: 10rem; }
+  height: 100%;
+  position: relative; }
 
 .upper-footer .upper-footer-el:not(:last-child) {
   margin-right: 1rem; }
@@ -49,23 +122,65 @@ footer {
   margin: 1rem 0;
   text-transform: uppercase;
   user-select: none;
-  position: relative; }
+  position: relative;
+  font-size: 14px;
+  font-weight: 600; }
 
 .upper-footer .footer-title::before {
   content: "";
   width: 1rem;
   height: 0.2rem;
   position: absolute;
-  bottom: -0.2rem;
-  background-color: #fff; }
+  bottom: -0.3rem;
+  background-color: #073C53; }
+
+.upper-footer .footer-part-el {
+  margin: 0.4rem 0; }
+
+/* icons */
+.footer-icon {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  left: -1.4rem;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.icon-location {
+  background-image: url("../src/medias/img/icons/map-pin.svg"); }
+
+.icon-mail {
+  background-image: url("../src/medias/img/icons/mail.svg"); }
+
+.icon-phone {
+  background-image: url("../src/medias/img/icons/phone.svg"); }
+
+.icon-fax {
+  background-image: url("../src/medias/img/icons/file-text.svg"); }
+
+.footer-logo {
+  display: block;
+  width: 11rem;
+  height: 4.5rem;
+  background-size: cover;
+  background-image: url("../src/medias/img/logo-premium-contact-2017-2.png"); }
 
 /* lower footer */
 .footer-part.lower-footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0B3545;
+  width: 100%;
+  height: 4rem;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
   user-select: none;
   text-transform: uppercase; }
+
+/* Responsive */
 
 /*# sourceMappingURL=style.css.map */
