@@ -27,7 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    width: 65%;
+    width: 50%;
     height: 100%;
     text-transform: uppercase;
     font-size: 14px;
@@ -74,3 +74,17 @@ header {
 .icon-login { background-image: url("../src/medias/img/icons/log-in.svg"); }
 .icon-register { background-image: url("../src/medias/img/icons/user-plus.svg"); }
 .icon-member { background-image: url("../src/medias/img/icons/lock.svg"); }
+
+/* Responsive */
+
+@media only screen and (max-width: 1500px) {
+    .header-nav {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .header-nav {
+        display: none;
+    }
+}

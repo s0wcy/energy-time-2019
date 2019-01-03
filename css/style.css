@@ -9,6 +9,15 @@ a {
   color: inherit;
   text-decoration: none; }
 
+.main {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.container {
+  width: 100vw;
+  height: 100vh; }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -32,7 +41,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  width: 65%;
+  width: 50%;
   height: 100%;
   text-transform: uppercase;
   font-size: 14px;
@@ -81,6 +90,35 @@ header {
 .icon-member {
   background-image: url("../src/medias/img/icons/lock.svg"); }
 
+/* Responsive */
+@media only screen and (max-width: 1500px) {
+  .header-nav {
+    width: 60%; } }
+@media only screen and (max-width: 1200px) {
+  .header-nav {
+    display: none; } }
+.landing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  position: relative; }
+
+.landing-el {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0; }
+
+.landing-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 50%; }
+
 footer {
   display: flex;
   justify-content: flex-end;
@@ -89,6 +127,7 @@ footer {
   width: 100%;
   height: auto;
   position: fixed;
+  z-index: 100;
   bottom: 0;
   font-family: 'Montserrat', sans-serif;
   background-color: #f9f9f9; }
