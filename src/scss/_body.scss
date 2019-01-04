@@ -19,5 +19,11 @@ a {
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
+    box-sizing: border-box;
+}
+
+.span-red {
+    color: $red;
+    font-weight: 600;
 }

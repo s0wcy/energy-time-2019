@@ -1,24 +1,29 @@
 .landing {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
     position: relative;
 }
 
 .landing-el {
     display: flex;
+    justify-content: flex-start;
     align-items: flex-start;
     width: 50%;
     height: 100%;
-    position: absolute;
     top: 0;
 }
 
 .landing-text {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    height: 50%;
+    height: 100%;
+    padding: 8rem 0 14rem 10rem;
+}
+
+.landing-title {
+
 }

@@ -1,6 +1,9 @@
-// import our scss files to compile here, please leave "config" as first import.
 @import "config";
+// import our scss files to compile here, please leave "config" as first import.
 @import "body";
 @import "header";
-@import "landing";
+@import "main/landing";
+@import "main/event";
+@import "main/participate";
+@import "main/sector";
 @import "footer";
