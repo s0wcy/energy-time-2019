@@ -10,6 +10,10 @@ footer {
     bottom: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: $cream;
+    @media screen and (max-width: 780px) {
+        justify-content: space-between;
+        height: 40vh;
+    }
 }
 
 .footer-part {
@@ -20,6 +24,9 @@ footer {
     width: 75%;
     height: auto;
     color: $blue;
+    @media screen and (max-width: 780px) {
+        width: 90%;
+    }
 }
 
 /* upper footer */
@@ -35,6 +42,12 @@ footer {
     width: 25%;
     height: 100%;
     position: relative;
+}
+
+.upper-footer .upper-footer-el-2 {
+    @media screen and (max-width: 780px) {
+        display: none;
+    }
 }
 
 .upper-footer .upper-footer-el:not(:last-child) { margin-right: 1rem; }

@@ -10,6 +10,9 @@
     background-position: center;
     color: $white;
     font-family: 'Montserrat', sans-serif;
+    @media screen and (max-width: 780px) {
+        padding: 0 5rem;
+    }
 }
 
 .banner-participate-img {
