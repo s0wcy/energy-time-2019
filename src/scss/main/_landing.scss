@@ -4,15 +4,23 @@
     align-items: flex-start;
     flex-direction: row;
     position: relative;
+    padding: 0 5rem;
+    height: 90vh;
 }
 
 .landing-el {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 50%;
     height: 100%;
-    top: 0;
+    padding: 10rem 0;
+}
+
+.landing-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 42%;
+    padding: 16rem 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .landing-text {
@@ -20,10 +28,53 @@
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
-    height: 100%;
-    padding: 8rem 0 14rem 10rem;
 }
 
-.landing-title {
+.landing-text h2 {
+    color: $blue;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
 
+.landing-text h3 {
+    color: $red;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.landing-text p {
+    color: $dark-blue;
+    opacity: 0.5;
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 2.4rem;
+}
+
+.landing-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    border: 2px solid $red;
+    border-radius: 2px;
+    color: $red;
+    font-size: 18px;
+    font-weight: 600;
+    transition: cubic-bezier(0.65, 0.01, 0.46, 1) 0.2s;
+}
+
+.landing-btn:hover {
+    border: transparent;
+    background-color: $red;
+    color: $white;
+}
+
+.landing-img {
+    width: 58%;
+    background-image: url('../src/medias/img/landing-illustration-01.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }

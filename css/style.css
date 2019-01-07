@@ -19,6 +19,11 @@ a {
   height: 80vh;
   box-sizing: border-box; }
 
+.banner {
+  width: 100vw;
+  height: 40vh;
+  box-sizing: border-box; }
+
 .span-red {
   color: #E22230;
   font-weight: 600; }
@@ -31,6 +36,9 @@ header {
   width: 100%;
   height: 6rem;
   padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif; }
 
@@ -107,23 +115,71 @@ header {
   justify-content: space-around;
   align-items: flex-start;
   flex-direction: row;
-  position: relative; }
+  position: relative;
+  padding: 0 5rem;
+  height: 90vh; }
 
 .landing-el {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 50%;
   height: 100%;
-  top: 0; }
+  padding: 10rem 0; }
+
+.landing-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 42%;
+  padding: 16rem 0;
+  font-family: 'Montserrat', sans-serif; }
 
 .landing-text {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  flex-direction: column;
-  height: 100%;
-  padding: 8rem 0 14rem 10rem; }
+  flex-direction: column; }
+
+.landing-text h2 {
+  color: #073C53;
+  font-size: 28px;
+  font-weight: 900;
+  margin-bottom: 1rem; }
+
+.landing-text h3 {
+  color: #E22230;
+  font-size: 26px;
+  font-weight: 600; }
+
+.landing-text p {
+  color: #0B3545;
+  opacity: 0.5;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 2.4rem; }
+
+.landing-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 3rem;
+  border: 2px solid #E22230;
+  border-radius: 2px;
+  color: #E22230;
+  font-size: 18px;
+  font-weight: 600;
+  transition: cubic-bezier(0.65, 0.01, 0.46, 1) 0.2s; }
+
+.landing-btn:hover {
+  border: transparent;
+  background-color: #E22230;
+  color: #ffffff; }
+
+.landing-img {
+  width: 58%;
+  background-image: url("../src/medias/img/landing-illustration-01.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .event {
   display: flex;
@@ -313,12 +369,19 @@ header {
   background-color: #073C53;
   border-radius: 2px; }
 
+.banner-participate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row; }
+
 .sector {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 42vh;
+  height: 52vh;
   padding: 0 10rem; }
 
 .sector-title {
@@ -327,7 +390,7 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 10%;
+  height: 20%;
   color: #073C53;
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
@@ -339,7 +402,7 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 90%;
+  height: 70%;
   padding: 2rem 0; }
 
 .sector-container .sector-row {
@@ -377,27 +440,51 @@ header {
   border: 3px #E22230 solid;
   border-radius: 100%;
   background-color: #ffffff;
-  background-image: url("/src/medias/img/icons/check.svg");
-  background-size: cover;
+  background-size: 60%;
+  background-position: center;
   background-repeat: no-repeat; }
 
 .sector-row-section .section-circle-1 {
-  background-image: url("/src/medias/img/icons/check.svg"); }
+  background-image: url("../src/medias/img/icons/zap.svg"); }
+
+.sector-row-section .section-circle-2 {
+  background-image: url("../src/medias/img/icons/check.svg"); }
+
+.sector-row-section .section-circle-3 {
+  background-image: url("../src/medias/img/icons/command.svg"); }
+
+.sector-row-section .section-circle-4 {
+  background-image: url("../src/medias/img/icons/settings.svg"); }
+
+.sector-row-section .section-circle-5 {
+  background-image: url("../src/medias/img/icons/home.svg"); }
+
+.sector-row-section .section-circle-6 {
+  background-image: url("../src/medias/img/icons/aperture.svg"); }
+
+.sector-row-section .section-circle-7 {
+  background-image: url("../src/medias/img/icons/dollar-sign.svg"); }
+
+.sector-row-section .section-circle-8 {
+  background-image: url("../src/medias/img/icons/database.svg"); }
 
 .sector-row-section .section-text {
-  margin-top: 1.2rem;
+  margin: 1.2rem 0.6rem 0 0.6rem;
   color: #0B3545;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1.2;
   text-align: center; }
 
 .partners {
   display: flex;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 38vh;
+  height: 45vh;
   padding: 0 10rem; }
 
 .partners-title {
@@ -438,12 +525,46 @@ header {
   display: block;
   width: 33%;
   height: 100%;
-  background-size: cover;
+  margin: 1rem;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center; }
 
 /* Col 1 */
+.partners-col-1 .partners-row-1 .partner-1 {
+  background-image: url("../src/medias/img/partners/logo-gimelec.jpg"); }
+
+.partners-col-1 .partners-row-1 .partner-2 {
+  background-image: url("../src/medias/img/partners/logo-ademe.png"); }
+
+.partners-col-1 .partners-row-1 .partner-3 {
+  background-image: url("../src/medias/img/partners/logo-supelec.png"); }
+
+.partners-col-1 .partners-row-2 .partner-1 {
+  background-image: url("../src/medias/img/partners/logo-atee.png"); }
+
+.partners-col-1 .partners-row-2 .partner-2 {
+  background-image: url("../src/medias/img/partners/logo-aidee.png"); }
+
+.partners-col-1 .partners-row-2 .partner-3 {
+  background-image: url("../src/medias/img/partners/logo-ceren.png"); }
+
 /* Col 2 */
+.partners-col-2 .partners-row-1 .partner-1 {
+  background-image: url("../src/medias/img/partners/logo-actuenv.jpg"); }
+
+.partners-col-2 .partners-row-1 .partner-2 {
+  background-image: url("../src/medias/img/partners/logo-green.png"); }
+
+.partners-col-2 .partners-row-1 .partner-3 {
+  background-image: url("../src/medias/img/partners/logo-valeur.png"); }
+
+.partners-col-2 .partners-row-2 .partner-1 {
+  background-image: url("../src/medias/img/partners/logo-energieplus.png"); }
+
+.partners-col-2 .partners-row-2 .partner-2 {
+  background-image: url("../src/medias/img/partners/logo-decideurs.svg"); }
+
 footer {
   display: flex;
   justify-content: flex-end;

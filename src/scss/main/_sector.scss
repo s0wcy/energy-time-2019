@@ -1,9 +1,10 @@
 .sector {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 42vh;
+    height: 52vh;
     padding: 0 10rem;
 }
 
@@ -13,7 +14,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 10%;
+    height: 20%;
     color: $blue;
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
@@ -26,7 +27,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 90%;
+    height: 70%;
     padding: 2rem 0;
 }
 
@@ -64,18 +65,28 @@
     border: 3px $red solid;
     border-radius: 100%;
     background-color: $white;
-    background-image: url('/src/medias/img/icons/check.svg');
-    background-size: cover;
+    background-size: 60%;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
-.sector-row-section .section-circle-1 { background-image: url('/src/medias/img/icons/check.svg'); }
+.sector-row-section .section-circle-1 { background-image: url('../src/medias/img/icons/zap.svg'); }
+.sector-row-section .section-circle-2 { background-image: url('../src/medias/img/icons/check.svg'); }
+.sector-row-section .section-circle-3 { background-image: url('../src/medias/img/icons/command.svg'); }
+.sector-row-section .section-circle-4 { background-image: url('../src/medias/img/icons/settings.svg'); }
+.sector-row-section .section-circle-5 { background-image: url('../src/medias/img/icons/home.svg'); }
+.sector-row-section .section-circle-6 { background-image: url('../src/medias/img/icons/aperture.svg'); }
+.sector-row-section .section-circle-7 { background-image: url('../src/medias/img/icons/dollar-sign.svg'); }
+.sector-row-section .section-circle-8 { background-image: url('../src/medias/img/icons/database.svg'); }
+
 
 .sector-row-section .section-text {
-    margin-top: 1.2rem;
+    margin: 1.2rem 0.6rem 0 0.6rem;
     color: $dark-blue;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1.2;
     text-align: center;
 }
