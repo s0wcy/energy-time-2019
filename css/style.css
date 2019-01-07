@@ -17,7 +17,8 @@ a {
 .container {
   width: 100vw;
   height: 80vh;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 1rem 0; }
 
 .banner {
   width: 100vw;
@@ -45,7 +46,7 @@ header {
 .header-logo {
   width: 13.5rem;
   height: 4rem;
-  background-image: url("../src/medias/img/logo.png");
+  background-image: url("../src/media/img/logo.png");
   background-size: contain;
   background-repeat: no-repeat; }
 
@@ -95,13 +96,13 @@ header {
   background-repeat: no-repeat; }
 
 .icon-login {
-  background-image: url("../src/medias/img/icons/log-in.svg"); }
+  background-image: url("../src/media/img/icons/log-in.svg"); }
 
 .icon-register {
-  background-image: url("../src/medias/img/icons/user-plus.svg"); }
+  background-image: url("../src/media/img/icons/user-plus.svg"); }
 
 .icon-member {
-  background-image: url("../src/medias/img/icons/lock.svg"); }
+  background-image: url("../src/media/img/icons/lock.svg"); }
 
 /* Responsive */
 @media only screen and (max-width: 1500px) {
@@ -116,12 +117,27 @@ header {
   align-items: flex-start;
   flex-direction: row;
   position: relative;
+  margin: 0;
   padding: 0 5rem;
-  height: 90vh; }
+  height: 100vh;
+  background-image: url("../src/media/img/shape.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center 100%; }
+  @media screen and (max-width: 780px) {
+    .landing {
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column-reverse;
+      height: 75vh;
+      padding: 6rem 5rem; } }
 
 .landing-el {
   height: 100%;
-  padding: 10rem 0; }
+  padding: 2rem 0; }
+  @media screen and (max-width: 780px) {
+    .landing-el {
+      padding: 0; } }
 
 .landing-content {
   display: flex;
@@ -129,8 +145,13 @@ header {
   align-items: flex-start;
   flex-direction: column;
   width: 42%;
-  padding: 16rem 0;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  padding: 16rem 0; }
+  @media screen and (max-width: 780px) {
+    .landing-content {
+      width: 100%;
+      height: 40%;
+      padding: 0; } }
 
 .landing-text {
   display: flex;
@@ -176,19 +197,29 @@ header {
 
 .landing-img {
   width: 58%;
-  background-image: url("../src/medias/img/landing-illustration-01.png");
+  background-image: url("../src/media/img/landing-illustration-01.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
+  @media screen and (max-width: 780px) {
+    .landing-img {
+      width: 100%;
+      height: 60%; } }
 
 .event {
   display: flex;
   align-items: center;
   flex-direction: column;
   height: 80vh;
+  margin-top: 0;
   padding: 0 10rem;
   position: relative;
   background-color: #073C53; }
+  @media screen and (max-width: 780px) {
+    .event {
+      justify-content: center;
+      height: 80vh;
+      padding: 0 5rem; } }
 
 /* Title */
 .event-title {
@@ -198,6 +229,9 @@ header {
   flex-direction: column;
   width: 100%;
   height: 20%; }
+  @media screen and (max-width: 780px) {
+    .event-title {
+      height: 10%; } }
 
 .event-title h2 {
   margin-bottom: 1.2rem;
@@ -230,6 +264,9 @@ header {
   flex-direction: row;
   width: 100%;
   height: 50%; }
+  @media screen and (max-width: 780px) {
+    .event-row {
+      flex-direction: column; } }
 
 .event-line {
   display: flex;
@@ -240,6 +277,9 @@ header {
   height: 100%;
   background-color: #ffffff;
   position: absolute; }
+  @media screen and (max-width: 780px) {
+    .event-line {
+      display: none; } }
 
 .event-line span {
   width: 1rem;
@@ -248,6 +288,10 @@ header {
   border-radius: 100%; }
 
 /* Row */
+@media screen and (max-width: 780px) {
+  .event-row-2 {
+    flex-direction: column-reverse; } }
+
 .event-row .event-text {
   width: 50%;
   font-family: 'Montserrat', sans-serif;
@@ -255,6 +299,11 @@ header {
   color: #ffffff;
   letter-spacing: 1px;
   line-height: 1.2; }
+  @media screen and (max-width: 780px) {
+    .event-row .event-text {
+      width: 100%;
+      margin: 1rem 0;
+      padding: 0 5rem; } }
 
 .event-row .event-img {
   width: 47%;
@@ -263,12 +312,22 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 2px; }
+  @media screen and (max-width: 780px) {
+    .event-row .event-img {
+      width: 100%;
+      height: 12rem; } }
 
 .event-row .event-text-1 {
   padding-right: 3rem; }
+  @media screen and (max-width: 780px) {
+    .event-row .event-text-1 {
+      padding: 0; } }
 
 .event-row .event-text-2 {
   padding-left: 3rem; }
+  @media screen and (max-width: 780px) {
+    .event-row .event-text-2 {
+      padding: 0; } }
 
 .participate {
   display: flex;
@@ -276,8 +335,17 @@ header {
   align-items: center;
   flex-direction: column;
   height: 50vh;
-  padding: 0 10rem;
-  position: relative; }
+  margin: 0;
+  padding: 0 12rem;
+  position: relative;
+  background-image: url("../src/media/img/shape.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -100%; }
+  @media screen and (max-width: 780px) {
+    .participate {
+      height: 65vh;
+      padding: 0 5rem; } }
 
 .participate-title {
   display: flex;
@@ -292,6 +360,9 @@ header {
   font-weight: 600;
   font-style: italic;
   text-transform: uppercase; }
+  @media screen and (max-width: 780px) {
+    .participate-title {
+      height: 10%; } }
 
 .participate-container {
   display: flex;
@@ -300,6 +371,9 @@ header {
   flex-direction: column;
   width: 100%;
   height: 85%; }
+  @media screen and (max-width: 780px) {
+    .participate-container {
+      height: 78%; } }
 
 /* Row 1 */
 .participate-row {
@@ -308,6 +382,10 @@ header {
   align-items: center;
   flex-direction: row;
   height: 75%; }
+  @media screen and (max-width: 780px) {
+    .participate-row {
+      flex-direction: column-reverse;
+      height: 100%; } }
 
 .participate-row .participate-text {
   display: flex;
@@ -322,6 +400,10 @@ header {
   line-height: 1.2;
   width: 50%;
   height: 100%; }
+  @media screen and (max-width: 780px) {
+    .participate-row .participate-text {
+      width: 100%;
+      height: 100%; } }
 
 .participate-row .participate-text ul li {
   margin: 0.5rem 0;
@@ -341,6 +423,9 @@ header {
   flex-direction: row;
   width: 50%;
   height: 100%; }
+  @media screen and (max-width: 780px) {
+    .participate-row .participate-img {
+      width: 100%; } }
 
 .participate-row .participate-img .img-col-1 {
   display: flex;
@@ -373,7 +458,46 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row; }
+  flex-direction: row;
+  padding: 0 10rem;
+  background-image: url("../src/media/img/banderolle.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif; }
+
+.banner-participate-img {
+  display: flex;
+  width: 45%;
+  height: 100%;
+  background-image: url("../src/media/img/banner-participate.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.banner-participate-text {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 55%;
+  height: 100%;
+  margin-left: 2rem;
+  padding: 2rem 0; }
+
+.banner-participate-text h4 {
+  font-size: 22px;
+  font-weight: 400; }
+
+.banner-participate-text a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 2.5rem;
+  border: 2px #ffffff solid;
+  border-radius: 2px; }
 
 .sector {
   display: flex;
@@ -381,7 +505,7 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 52vh;
+  height: 64vh;
   padding: 0 10rem; }
 
 .sector-title {
@@ -445,28 +569,28 @@ header {
   background-repeat: no-repeat; }
 
 .sector-row-section .section-circle-1 {
-  background-image: url("../src/medias/img/icons/zap.svg"); }
+  background-image: url("../src/media/img/icons/zap.svg"); }
 
 .sector-row-section .section-circle-2 {
-  background-image: url("../src/medias/img/icons/check.svg"); }
+  background-image: url("../src/media/img/icons/check.svg"); }
 
 .sector-row-section .section-circle-3 {
-  background-image: url("../src/medias/img/icons/command.svg"); }
+  background-image: url("../src/media/img/icons/command.svg"); }
 
 .sector-row-section .section-circle-4 {
-  background-image: url("../src/medias/img/icons/settings.svg"); }
+  background-image: url("../src/media/img/icons/settings.svg"); }
 
 .sector-row-section .section-circle-5 {
-  background-image: url("../src/medias/img/icons/home.svg"); }
+  background-image: url("../src/media/img/icons/home.svg"); }
 
 .sector-row-section .section-circle-6 {
-  background-image: url("../src/medias/img/icons/aperture.svg"); }
+  background-image: url("../src/media/img/icons/aperture.svg"); }
 
 .sector-row-section .section-circle-7 {
-  background-image: url("../src/medias/img/icons/dollar-sign.svg"); }
+  background-image: url("../src/media/img/icons/dollar-sign.svg"); }
 
 .sector-row-section .section-circle-8 {
-  background-image: url("../src/medias/img/icons/database.svg"); }
+  background-image: url("../src/media/img/icons/database.svg"); }
 
 .sector-row-section .section-text {
   margin: 1.2rem 0.6rem 0 0.6rem;
@@ -532,38 +656,38 @@ header {
 
 /* Col 1 */
 .partners-col-1 .partners-row-1 .partner-1 {
-  background-image: url("../src/medias/img/partners/logo-gimelec.jpg"); }
+  background-image: url("../src/media/img/partners/logo-gimelec.jpg"); }
 
 .partners-col-1 .partners-row-1 .partner-2 {
-  background-image: url("../src/medias/img/partners/logo-ademe.png"); }
+  background-image: url("../src/media/img/partners/logo-ademe.png"); }
 
 .partners-col-1 .partners-row-1 .partner-3 {
-  background-image: url("../src/medias/img/partners/logo-supelec.png"); }
+  background-image: url("../src/media/img/partners/logo-supelec.png"); }
 
 .partners-col-1 .partners-row-2 .partner-1 {
-  background-image: url("../src/medias/img/partners/logo-atee.png"); }
+  background-image: url("../src/media/img/partners/logo-atee.png"); }
 
 .partners-col-1 .partners-row-2 .partner-2 {
-  background-image: url("../src/medias/img/partners/logo-aidee.png"); }
+  background-image: url("../src/media/img/partners/logo-aidee.png"); }
 
 .partners-col-1 .partners-row-2 .partner-3 {
-  background-image: url("../src/medias/img/partners/logo-ceren.png"); }
+  background-image: url("../src/media/img/partners/logo-ceren.png"); }
 
 /* Col 2 */
 .partners-col-2 .partners-row-1 .partner-1 {
-  background-image: url("../src/medias/img/partners/logo-actuenv.jpg"); }
+  background-image: url("../src/media/img/partners/logo-actuenv.jpg"); }
 
 .partners-col-2 .partners-row-1 .partner-2 {
-  background-image: url("../src/medias/img/partners/logo-green.png"); }
+  background-image: url("../src/media/img/partners/logo-green.png"); }
 
 .partners-col-2 .partners-row-1 .partner-3 {
-  background-image: url("../src/medias/img/partners/logo-valeur.png"); }
+  background-image: url("../src/media/img/partners/logo-valeur.png"); }
 
 .partners-col-2 .partners-row-2 .partner-1 {
-  background-image: url("../src/medias/img/partners/logo-energieplus.png"); }
+  background-image: url("../src/media/img/partners/logo-energieplus.png"); }
 
 .partners-col-2 .partners-row-2 .partner-2 {
-  background-image: url("../src/medias/img/partners/logo-decideurs.svg"); }
+  background-image: url("../src/media/img/partners/logo-decideurs.svg"); }
 
 footer {
   display: flex;
@@ -635,23 +759,23 @@ footer {
   background-repeat: no-repeat; }
 
 .icon-location {
-  background-image: url("../src/medias/img/icons/map-pin.svg"); }
+  background-image: url("../src/media/img/icons/map-pin.svg"); }
 
 .icon-mail {
-  background-image: url("../src/medias/img/icons/mail.svg"); }
+  background-image: url("../src/media/img/icons/mail.svg"); }
 
 .icon-phone {
-  background-image: url("../src/medias/img/icons/phone.svg"); }
+  background-image: url("../src/media/img/icons/phone.svg"); }
 
 .icon-fax {
-  background-image: url("../src/medias/img/icons/file-text.svg"); }
+  background-image: url("../src/media/img/icons/file-text.svg"); }
 
 .footer-logo {
   display: block;
   width: 11rem;
   height: 4.5rem;
   background-size: cover;
-  background-image: url("../src/medias/img/logo-premium-contact-2017-2.png"); }
+  background-image: url("../src/media/img/logo-premium-contact-2017-2.png"); }
 
 /* lower footer */
 .footer-part.lower-footer {

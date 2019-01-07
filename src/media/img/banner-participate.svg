@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="412" height="168" viewBox="0 0 412 168">
+  <g id="Groupe_7" data-name="Groupe 7" transform="translate(-400 -710)">
+    <text id="ateliers_techniques_et_conférences" data-name="ateliers techniques
+et conférences" transform="translate(727 765)" fill="#fff" font-size="18" font-family="Montserrat-Light, Montserrat" font-weight="300"><tspan x="-84.159" y="0">ateliers techniques</tspan><tspan x="-65.511" y="22">et conférences</tspan></text>
+    <text id="de_visiteurs_end_user" data-name="de visiteurs
+end user" transform="translate(451 765)" fill="#fff" font-size="18" font-family="Montserrat-Light, Montserrat" font-weight="300"><tspan x="-50.13" y="0">de visiteurs</tspan><tspan x="-39.069" y="22">end user</tspan></text>
+    <text id="participants" transform="translate(589 842)" fill="#fff" font-size="18" font-family="Montserrat-Light, Montserrat" font-weight="300"><tspan x="-53.505" y="0">participants</tspan></text>
+    <g id="Ellipse_18" data-name="Ellipse 18" transform="translate(416 808)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="35" cy="35" r="35" stroke="none"/>
+      <circle cx="35" cy="35" r="34" fill="none"/>
+    </g>
+    <g id="Ellipse_19" data-name="Ellipse 19" transform="translate(554 713)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="35" cy="35" r="35" stroke="none"/>
+      <circle cx="35" cy="35" r="34" fill="none"/>
+    </g>
+    <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(692 808)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="35" cy="35" r="35" stroke="none"/>
+      <circle cx="35" cy="35" r="34" fill="none"/>
+    </g>
+    <line id="Ligne_6" data-name="Ligne 6" y1="56" x2="81" transform="translate(479.5 768.5)" fill="none" stroke="#fff" stroke-width="2"/>
+    <line id="Ligne_7" data-name="Ligne 7" x2="82" y2="56" transform="translate(615.5 768.5)" fill="none" stroke="#fff" stroke-width="2"/>
+    <text id="_30" data-name="30" transform="translate(727 744)" fill="#fff" font-size="32" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="-18.195" y="0">30</tspan></text>
+    <text id="_100_" data-name="100%" transform="translate(451 744)" fill="#fff" font-size="32" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="-39.352" y="0">100%</tspan></text>
+    <text id="_600" data-name="600" transform="translate(589 821)" fill="#fff" font-size="32" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="-27.523" y="0">600</tspan></text>
+  </g>
+</svg>

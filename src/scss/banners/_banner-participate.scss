@@ -3,4 +3,47 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
+    padding: 0 10rem;
+    background-image: url('../src/media/img/banderolle.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: $white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner-participate-img {
+    display: flex;
+    width: 45%;
+    height: 100%;
+    background-image: url('../src/media/img/banner-participate.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-participate-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    margin-left: 2rem;
+    padding: 2rem 0;
+}
+
+.banner-participate-text h4 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.banner-participate-text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2.5rem;
+    border: 2px $white solid;
+    border-radius: 2px;
 }

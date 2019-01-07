@@ -20,7 +20,7 @@ header {
 .header-logo {
     width: 13.5rem;
     height: 4rem;
-    background-image: url("../src/medias/img/logo.png");
+    background-image: url("../src/media/img/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -74,9 +74,9 @@ header {
     background-repeat: no-repeat;
 }
 
-.icon-login { background-image: url("../src/medias/img/icons/log-in.svg"); }
-.icon-register { background-image: url("../src/medias/img/icons/user-plus.svg"); }
-.icon-member { background-image: url("../src/medias/img/icons/lock.svg"); }
+.icon-login { background-image: url("../src/media/img/icons/log-in.svg"); }
+.icon-register { background-image: url("../src/media/img/icons/user-plus.svg"); }
+.icon-member { background-image: url("../src/media/img/icons/lock.svg"); }
 
 /* Responsive */
 
