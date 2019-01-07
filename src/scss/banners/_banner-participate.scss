@@ -10,7 +10,7 @@
     background-position: center;
     color: $white;
     font-family: 'Montserrat', sans-serif;
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 1060px) {
         padding: 0 5rem;
     }
 }
@@ -49,4 +49,15 @@
     height: 2.5rem;
     border: 2px $white solid;
     border-radius: 2px;
+    transition: cubic-bezier(0.65, 0.01, 0.46, 1) 0.2s;
+}
+
+.banner-participate-text a:hover {
+    color: $cream;
+    background-color: $red;
+    border: 2px $cream solid;
+}
+
+.banner-participate-text p {
+    font-size: 18px;
 }

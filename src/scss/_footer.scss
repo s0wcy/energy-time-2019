@@ -10,7 +10,7 @@ footer {
     bottom: 0;
     font-family: 'Montserrat', sans-serif;
     background-color: $cream;
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 1160px) {
         justify-content: space-between;
         height: 40vh;
     }
@@ -24,7 +24,7 @@ footer {
     width: 75%;
     height: auto;
     color: $blue;
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 1160px) {
         width: 90%;
     }
 }
@@ -45,7 +45,7 @@ footer {
 }
 
 .upper-footer .upper-footer-el-2 {
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 1160px) {
         display: none;
     }
 }
