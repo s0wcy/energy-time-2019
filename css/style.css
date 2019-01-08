@@ -836,7 +836,7 @@ header {
   align-items: center;
   flex-direction: column;
   height: 70vh;
-  margin-top: 0;
+  margin: 0;
   padding: 0 10rem;
   position: relative;
   background-color: #073C53;
@@ -928,6 +928,36 @@ header {
   @media screen and (max-width: 1160px) {
     .banner-visitor {
       padding: 0 5rem; } }
+
+.banner-visitor .banner-visitor-el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%; }
+
+.banner-visitor-el .sector-icon {
+  width: 6.5rem;
+  height: 6.5rem;
+  border: 2px solid #E22230;
+  border-radius: 100%;
+  background-color: #f9f9f9;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem; }
+  @media screen and (max-width: 1160px) {
+    .banner-visitor-el .sector-icon {
+      width: 4rem;
+      height: 4rem; } }
+
+.banner-visitor-el span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400; }
 
 footer {
   display: flex;

@@ -14,3 +14,36 @@
         padding: 0 5rem;
     }
 }
+
+.banner-visitor .banner-visitor-el {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.banner-visitor-el .sector-icon {
+    width: 6.5rem;
+    height: 6.5rem;
+    border: 2px solid $red;
+    border-radius: 100%;
+    background-color: $cream;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    @media screen and (max-width: 1160px) {
+        width: 4rem;
+        height: 4rem;
+    }
+}
+
+.banner-visitor-el span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
