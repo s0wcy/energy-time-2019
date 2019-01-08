@@ -86,3 +86,15 @@ header {
 .icon-login { background-image: url("../src/media/img/icons/log-in.svg"); }
 .icon-register { background-image: url("../src/media/img/icons/user-plus.svg"); }
 .icon-member { background-image: url("../src/media/img/icons/lock.svg"); }
+
+/* Burger */
+
+.hamburger {
+    display: flex;
+    visibility: hidden;
+    width: 4rem;
+    height: auto;
+    @media screen and (max-width: 1160px) {
+        visibility: visible;
+    }
+}

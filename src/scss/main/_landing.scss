@@ -15,7 +15,7 @@
         justify-content: space-around;
         align-items: center;
         flex-direction: column-reverse;
-        height: 75vh;
+        height: 80vh;
         padding: 6rem 5rem;
     }
 }
@@ -69,6 +69,9 @@
     font-size: 22px;
     font-weight: 600;
     margin-top: 2.4rem;
+    @media screen and (max-width: 1160px) {
+        margin-top: 1rem;
+    }
 }
 
 .landing-btn {
