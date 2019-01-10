@@ -17,13 +17,17 @@
 
 .banner-visitor .banner-visitor-el {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    width: 20%;
     height: 100%;
+    @media screen and (max-width: 1160px) {
+        height: 40%;
+    }
 }
 
-.banner-visitor-el .sector-icon {
+.banner-visitor-el .visitor-icon {
     width: 6.5rem;
     height: 6.5rem;
     border: 2px solid $red;
