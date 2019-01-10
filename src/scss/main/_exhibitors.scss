@@ -1,0 +1,103 @@
+.exhibitors {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 120vh;
+    padding: 0 10rem 1rem 10rem;
+    margin-bottom: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('/src/media/img/shape.svg');
+    background-size: contain;
+    background-position: center 120%;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 1160px) {
+        padding: 0 5rem;
+    }
+}
+
+.exhibitors-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 7%;
+    @media screen and (max-width: 1160px) {
+        height: 10%;
+    }
+}
+
+.exhibitors-title h2 {
+    margin-bottom: 1.2rem;
+    color: $blue;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+/* Exhibitors */
+
+.exhibitors-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 93%;
+}
+
+.exhibitors-container .exhibitors-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row;
+    width: 100%;
+    height: 65%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.exhibitors-list .exhibitor {
+    background-color: $blue;
+    border-radius: 2px;
+    width: 6rem;
+    height: 6rem;
+    margin: 0.4rem;
+}
+
+.exhibitors-container .exhibitors-subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 10%;
+}
+
+.exhibitors-container .exhibitors-subtitle h3 {
+    margin-bottom: 1.2rem;
+    color: $blue;
+    font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.exhibitors-subtitle span {
+    width: 8rem;
+    height: 0.2rem;
+    background-color: $red;
+    border-radius: 4px;
+}
+
+.exhibitors-container .exhibitors-testimonials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 25%;
+    font-style: italic;
+}
