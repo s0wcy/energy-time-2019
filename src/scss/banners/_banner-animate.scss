@@ -1,4 +1,4 @@
-.banner-target {
+.banner-animate {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -7,24 +7,29 @@
     margin: 1rem 0 2rem 0;
     color: $blue;
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    font-style: italic;
     @media screen and (max-width: 1060px) {
         padding: 0 5rem;
     }
 }
 
-.banner-target .target-title {
+.banner-animate .animate-title {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 10%;
     margin: 1rem 0;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
 }
 
-.target-row {
+.animate-el .span-red {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.animate-row {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -34,13 +39,30 @@
     margin-bottom: 1rem;
 }
 
-.target-row .target-el {
+.animate-row .animate-el {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
     width: 50%;
     height: 100%;
     margin: 0 1rem;
-    background-color: $blue;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 2px;
+}
+
+.animate-el-2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.animate-el-2 .animate-img {
+    width: 35%;
+    height: 100%;
+    background-color: $blue;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
