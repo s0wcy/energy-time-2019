@@ -1536,6 +1536,27 @@ header {
   font-weight: 400;
   color: #ffffff; }
 
+.communicate-el {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%; }
+
+blockquote.twitter-tweet {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  padding: 0 16px 16px 16px;
+  max-width: 468px; }
+
 footer {
   display: flex;
   justify-content: flex-end;
