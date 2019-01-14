@@ -3,14 +3,28 @@
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    margin-top: 0;
+    margin: 0;
     padding: 0 10rem;
     position: relative;
-    background-color: $blue;
+    z-index: 10;
+    background-image: url('../src/medias/img/shape.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
     @media screen and (max-width: 1160px) {
         justify-content: space-between;
         padding: 3rem 5rem;
     }
+}
+
+.promotion-background {
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    background-color: $blue;
 }
 
 /* Promotion Title */
