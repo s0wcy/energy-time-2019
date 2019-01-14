@@ -1,0 +1,119 @@
+.promotion {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 0;
+    padding: 0 10rem;
+    position: relative;
+    background-color: $blue;
+    @media screen and (max-width: 1160px) {
+        justify-content: space-between;
+        padding: 3rem 5rem;
+    }
+}
+
+/* Promotion Title */
+
+.promotion-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 16%;
+    @media screen and (max-width: 1160px) {
+        height: 10%;
+    }
+}
+
+.promotion-title h2 {
+    margin-bottom: 1.2rem;
+    color: $white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.promotion-title span {
+    width: 8rem;
+    height: 0.2rem;
+    background-color: $red;
+    border-radius: 4px;
+}
+
+/* Promotion container */
+
+.promotion-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 84%;
+    margin-bottom: 3rem;
+}
+
+.promotion-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+.promotion-row-1 { height: 60%; }
+.promotion-row-2 { height: 40%; }
+
+.promotion-row .promotion-col {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.promotion-col-1 { width: 35%; }
+.promotion-col-2 { width: 20%; }
+
+.promotion-el {
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $white;
+    border-radius: 2px;
+    margin: 0 1rem;
+}
+
+.promotion-el-1 {
+    width: 65%;
+    height: 100%;
+    margin-left: 0;
+}
+
+.promotion-el-2, .promotion-el-3 {
+    width: 100%;
+    height: 50%;
+}
+
+.promotion-el-2 { margin-bottom: 0.5rem; }
+.promotion-el-3 { margin-top: 0.5rem; }
+
+.promotion-el-4, .promotion-el-5 {
+    width: 100%;
+    height: 50%;
+}
+
+.promotion-el-4 { margin-bottom: 0.5rem; }
+.promotion-el-5 { margin-top: 0.5rem; }
+
+.promotion-el-6, .promotion-el-7 {
+    width: 40%;
+    height: 100%;
+}
+
+.promotion-el-6 { margin: 0 0.5rem 0 1rem; }
+.promotion-el-7 { margin: 0 0 0 0.5rem; }
