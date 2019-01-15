@@ -54,9 +54,13 @@
     border-radius: 2px;
 }
 
-.animate-el-2 {
+.animate-row .animate-el-2 {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
+    width: 50%;
+    height: 100%;
 }
 
 .animate-el-2 .animate-img {
