@@ -1709,8 +1709,8 @@ blockquote.twitter-tweet {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 70vh;
-  margin-top: 0;
+  height: 80vh;
+  margin: 0;
   padding: 0 10rem;
   position: relative;
   background-color: #073C53;
@@ -1728,7 +1728,7 @@ blockquote.twitter-tweet {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 18%; }
+  height: 16%; }
   @media screen and (max-width: 1160px) {
     .organisation-title {
       height: 12%; } }
