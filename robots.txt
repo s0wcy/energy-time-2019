@@ -1,2 +1,2 @@
-noindex
-nofollow
+Noindex
+Nofollow

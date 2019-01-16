@@ -1241,7 +1241,7 @@ header {
   padding: 0 10rem 1rem 10rem;
   margin-bottom: 0;
   font-family: 'Montserrat', sans-serif;
-  background-image: url("/src/medias/img/shape.svg");
+  background-image: url("../src/medias/img/shape.svg");
   background-size: contain;
   background-position: center 120%;
   background-repeat: no-repeat; }
