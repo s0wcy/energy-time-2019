@@ -5,7 +5,7 @@
     flex-direction: row;
     width: 100%;
     height: 30vh;
-    padding: 0 10rem;
+    padding: 3rem 10rem;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -17,7 +17,7 @@
 
 .banner-visitor .banner-visitor-el {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     width: 20%;

@@ -920,7 +920,7 @@ header {
   flex-direction: row;
   width: 100%;
   height: 30vh;
-  padding: 0 10rem;
+  padding: 3rem 10rem;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -931,7 +931,7 @@ header {
 
 .banner-visitor .banner-visitor-el {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   width: 20%;
@@ -970,8 +970,9 @@ header {
   flex-direction: row;
   width: 100%;
   height: 40vh;
-  padding: 0 10rem;
-  color: #073C53; }
+  padding: 3rem 10rem;
+  color: #073C53;
+  background-color: #073C53; }
   @media screen and (max-width: 1160px) {
     .banner-sector {
       padding: 0 5rem; } }
@@ -980,14 +981,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 10rem;
-  height: 10rem;
-  height: auto;
+  width: 25%;
+  height: 100%;
   border-radius: 2px;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat; }
+
+.banner-sector-el:not(:last-child) {
+  margin-right: 1rem; }
 
 .banner-sector-el .sector-el {
   display: flex;
@@ -995,13 +998,13 @@ header {
   align-items: center;
   width: 100%;
   height: 20%;
-  background-color: #073C53;
-  opacity: 0.2; }
+  background-color: #C8D3D8;
+  border-radius: 2px; }
 
 .banner-sector-el .sector-el h4 {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
-  font-weight: 400; }
+  font-weight: 600; }
 
 .banner-target {
   display: flex;
@@ -1595,15 +1598,6 @@ blockquote.twitter-tweet {
       justify-content: space-between;
       padding: 3rem 5rem; } }
 
-.offer-background {
-  width: 100%;
-  height: 35%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -5;
-  background-color: #073C53; }
-
 .offer-title {
   display: flex;
   justify-content: center;
@@ -1616,10 +1610,11 @@ blockquote.twitter-tweet {
       height: 10%; } }
 
 .offer-title h2 {
-  margin-bottom: 1.2rem;
+  margin: 1.2rem 0;
   font-size: 26px;
   font-weight: 600;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #073C53; }
 
 .offer-title span {
   width: 8rem;
@@ -1634,14 +1629,16 @@ blockquote.twitter-tweet {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 84%; }
+  height: 84%;
+  position: relative; }
 
 .offer-subtitle {
   width: 100%;
   height: 8%;
   text-align: center;
   font-weight: 400;
-  font-style: italic; }
+  font-style: italic;
+  color: #073C53; }
 
 .offer-row {
   display: flex;
@@ -1674,9 +1671,9 @@ blockquote.twitter-tweet {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 5%;
-  font-size: 16px;
-  font-weight: 400;
+  height: 10%;
+  font-size: 18px;
+  font-weight: 600;
   color: #E22230;
   text-transform: uppercase; }
 
@@ -1689,6 +1686,40 @@ blockquote.twitter-tweet {
   height: 85%;
   padding: 0 5%;
   color: #073C53; }
+
+.offer-content-subtitle {
+  font-weight: 600;
+  text-align: center; }
+
+ul.offer-content-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  position: relative; }
+
+ul.offer-content-list li::before {
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  position: absolute;
+  border-radius: 100%;
+  background-color: #E22230;
+  left: 1rem; }
+
+.offer-col-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 3rem;
+  background-color: #E22230;
+  border-radius: 2px;
+  color: #ffffff;
+  position: absolute;
+  bottom: -1%; }
 
 .offer-btn {
   display: flex;
