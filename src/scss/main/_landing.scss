@@ -5,7 +5,6 @@
     flex-direction: row;
     position: relative;
     margin: 0;
-    padding: 0 5rem;
     height: 100vh;
     background-image: url('../src/medias/img/shape.svg');
     background-size: contain;
@@ -34,7 +33,6 @@
     align-items: flex-start;
     flex-direction: column;
     width: 42%;
-    font-family: 'Montserrat', sans-serif;
     padding: 16rem 0;
     @media screen and (max-width: 1160px) {
         width: 100%;

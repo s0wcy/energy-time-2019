@@ -4,13 +4,11 @@
     flex-direction: column;
     height: 90vh;
     margin: 0;
-    padding: 0 10rem;
     position: relative;
     background-image: url('../src/medias/img/shape.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center 140%;
-    font-family: 'Montserrat', sans-serif;
     color: $white;
     box-sizing: border-box;
     @media screen and (max-width: 1160px) {

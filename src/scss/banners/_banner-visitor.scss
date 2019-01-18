@@ -5,8 +5,7 @@
     flex-direction: row;
     width: 100%;
     height: 30vh;
-    padding: 3rem 10rem;
-    font-family: 'Montserrat', sans-serif;
+    padding: 3rem 20rem;
     font-size: 16px;
     font-weight: 400;
     color: $blue;
@@ -32,9 +31,8 @@
     height: 6.5rem;
     border: 2px solid $red;
     border-radius: 100%;
-    background-color: $cream;
     background-position: center;
-    background-size: contain;
+    background-size: 55%;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
     @media screen and (max-width: 1160px) {
@@ -51,3 +49,9 @@
     font-size: 16px;
     font-weight: 400;
 }
+
+.icon-bulb { background-image: url('../src/medias/img/icons/bulb.svg'); }
+.icon-env { background-image: url('../src/medias/img/icons/recycle.svg'); }
+.icon-graph { background-image: url('../src/medias/img/icons/graph.svg'); }
+.icon-plug { background-image: url('../src/medias/img/icons/plug.svg'); }
+.icon-quart { background-image: url('../src/medias/img/icons/quart.svg'); }

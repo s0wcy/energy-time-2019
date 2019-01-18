@@ -3,13 +3,11 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    padding: 0 10rem;
     background-image: url('../src/medias/img/banderolle.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: $white;
-    font-family: 'Montserrat', sans-serif;
     @media screen and (max-width: 1060px) {
         padding: 0 5rem;
     }

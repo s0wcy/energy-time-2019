@@ -4,7 +4,8 @@ html, body {
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: 'Multi', sans-serif; }
 
 a {
   color: inherit;
@@ -19,12 +20,14 @@ a {
   width: 100vw;
   height: 80vh;
   box-sizing: border-box;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  padding: 0 22rem; }
 
 .banner {
   width: 100vw;
   height: 40vh;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0 22rem; }
 
 .span-red {
   color: #E22230;
@@ -37,12 +40,11 @@ header {
   flex-direction: row;
   width: 100%;
   height: 6rem;
-  padding: 0 1rem;
+  padding: 0 12rem;
   position: fixed;
   top: 0;
   z-index: 1000;
-  background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif; }
+  background-color: #ffffff; }
 
 .header-logo {
   width: 13.5rem;
@@ -221,7 +223,6 @@ header {
   flex-direction: row;
   position: relative;
   margin: 0;
-  padding: 0 5rem;
   height: 100vh;
   background-image: url("../src/medias/img/shape.svg");
   background-size: contain;
@@ -248,7 +249,6 @@ header {
   align-items: flex-start;
   flex-direction: column;
   width: 42%;
-  font-family: 'Montserrat', sans-serif;
   padding: 16rem 0; }
   @media screen and (max-width: 1160px) {
     .landing-content {
@@ -317,8 +317,7 @@ header {
   align-items: center;
   flex-direction: column;
   height: 80vh;
-  margin-top: 0;
-  padding: 0 10rem;
+  margin: 0;
   position: relative;
   background-color: #073C53; }
   @media screen and (max-width: 1160px) {
@@ -341,7 +340,6 @@ header {
 .event-title h2 {
   margin-bottom: 1.2rem;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase; }
@@ -402,7 +400,6 @@ header {
 
 .event-row .event-text {
   width: 50%;
-  font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   color: #ffffff;
   letter-spacing: 1px;
@@ -437,6 +434,60 @@ header {
     .event-row .event-text-2 {
       padding: 0; } }
 
+.banner-event {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 30vh;
+  background-color: #073C53; }
+
+.banner-event .banner-event-col {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.banner-event .banner-event-col-1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 2rem; }
+
+.banner-event .banner-event-col-2 {
+  width: 30%;
+  height: 100%;
+  background-image: url("../src/medias/img/france.svg"); }
+
+.banner-event-col-1 .banner-event-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #ffffff; }
+
+.banner-event-col-1 .banner-event-list {
+  position: relative; }
+
+.banner-event-col-1 .event-list-el {
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0.5rem 0; }
+
+.banner-event-col-1 .event-list-el::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: #E22230;
+  border-radius: 100%;
+  position: absolute;
+  left: 1rem; }
+
 .participate {
   display: flex;
   justify-content: flex-start;
@@ -444,7 +495,6 @@ header {
   flex-direction: column;
   height: 50vh;
   margin: 0;
-  padding: 0 12rem;
   position: relative;
   background-image: url("../src/medias/img/shape.svg");
   background-size: cover;
@@ -464,7 +514,6 @@ header {
   width: 100%;
   height: 25%;
   color: #073C53;
-  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 600;
   font-style: italic;
@@ -501,7 +550,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 15px;
   color: #073C53;
@@ -568,13 +616,11 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  padding: 0 10rem;
   background-image: url("../src/medias/img/banderolle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif; }
+  color: #ffffff; }
   @media screen and (max-width: 1060px) {
     .banner-participate {
       padding: 0 5rem; } }
@@ -625,8 +671,7 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  height: 64vh;
-  padding: 0 10rem; }
+  height: 64vh; }
   @media screen and (max-width: 1160px) {
     .sector {
       padding: 0 5rem;
@@ -640,7 +685,6 @@ header {
   width: 100%;
   height: 20%;
   color: #073C53;
-  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase; }
@@ -732,7 +776,6 @@ header {
 .sector-row-section .section-text {
   margin: 1.2rem 0.6rem 0 0.6rem;
   color: #0B3545;
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -744,8 +787,7 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  height: 45vh;
-  padding: 0 10rem; }
+  height: 45vh; }
   @media screen and (max-width: 1160px) {
     .partners {
       height: 30vh;
@@ -759,7 +801,6 @@ header {
   width: 100%;
   height: 10%;
   color: #073C53;
-  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 600;
   text-align: center; }
@@ -837,10 +878,8 @@ header {
   flex-direction: column;
   height: 55vh;
   margin: 0;
-  padding: 0 10rem;
   position: relative;
   background-color: #073C53;
-  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   box-sizing: border-box; }
   @media screen and (max-width: 1160px) {
@@ -878,8 +917,8 @@ header {
   align-items: center;
   width: 100%;
   height: 15%;
+  margin-bottom: 1rem;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   color: #ffffff; }
 
@@ -896,9 +935,9 @@ header {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  width: 55%;
+  width: 40%;
   height: 100%;
-  margin-right: 1rem; }
+  margin-right: 2rem; }
 
 .visitor-row-2 .visitor-text p {
   font-weight: 300; }
@@ -909,9 +948,12 @@ header {
   font-style: italic; }
 
 .visitor-img {
-  width: 45%;
-  height: 80%;
-  background-color: #ffffff; }
+  width: 60%;
+  height: 100%;
+  background-image: url("../src/medias/img/participate.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .banner-visitor {
   display: flex;
@@ -920,8 +962,7 @@ header {
   flex-direction: row;
   width: 100%;
   height: 30vh;
-  padding: 3rem 10rem;
-  font-family: 'Montserrat', sans-serif;
+  padding: 3rem 20rem;
   font-size: 16px;
   font-weight: 400;
   color: #073C53; }
@@ -945,9 +986,8 @@ header {
   height: 6.5rem;
   border: 2px solid #E22230;
   border-radius: 100%;
-  background-color: #f9f9f9;
   background-position: center;
-  background-size: contain;
+  background-size: 55%;
   background-repeat: no-repeat;
   margin-bottom: 1rem; }
   @media screen and (max-width: 1160px) {
@@ -963,19 +1003,49 @@ header {
   font-size: 16px;
   font-weight: 400; }
 
+.icon-bulb {
+  background-image: url("../src/medias/img/icons/bulb.svg"); }
+
+.icon-env {
+  background-image: url("../src/medias/img/icons/recycle.svg"); }
+
+.icon-graph {
+  background-image: url("../src/medias/img/icons/graph.svg"); }
+
+.icon-plug {
+  background-image: url("../src/medias/img/icons/plug.svg"); }
+
+.icon-quart {
+  background-image: url("../src/medias/img/icons/quart.svg"); }
+
 .banner-sector {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   height: 40vh;
-  padding: 3rem 10rem;
+  padding: 2rem 20rem;
   color: #073C53;
   background-color: #073C53; }
   @media screen and (max-width: 1160px) {
     .banner-sector {
       padding: 0 5rem; } }
+
+.banner-sector-title {
+  color: #ffffff;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 2rem; }
+
+.banner-sector-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 95%; }
 
 .banner-sector-el {
   display: flex;
@@ -984,7 +1054,6 @@ header {
   width: 25%;
   height: 100%;
   border-radius: 2px;
-  background-color: #f9f9f9;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat; }
@@ -997,24 +1066,34 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20%;
-  background-color: #C8D3D8;
+  height: 16%;
+  background-color: #f9f9f9;
   border-radius: 2px; }
 
 .banner-sector-el .sector-el h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600; }
+
+.banner-sector-el-1 {
+  background-image: url("../src/medias/img/visitorat1.jpg"); }
+
+.banner-sector-el-2 {
+  background-image: url("../src/medias/img/visitorat2.jpg"); }
+
+.banner-sector-el-3 {
+  background-image: url("../src/medias/img/visitorat3.jpg"); }
+
+.banner-sector-el-4 {
+  background-image: url("../src/medias/img/visitorat4.jpg"); }
 
 .banner-target {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  padding: 0 10rem;
+  height: 60vh;
   margin: 1rem 0 2rem 0;
   color: #073C53;
-  font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 600;
   font-style: italic; }
@@ -1028,7 +1107,7 @@ header {
   align-items: center;
   width: 100%;
   height: 10%;
-  margin: 1rem 0; }
+  margin: 2rem 0; }
 
 .target-row {
   display: flex;
@@ -1036,18 +1115,30 @@ header {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  height: 90%;
-  margin-bottom: 1rem; }
+  height: 90%; }
+
+.target-row:not(:last-child) {
+  margin-bottom: 3rem; }
 
 .target-row .target-el {
   width: 50%;
   height: 100%;
   margin: 0 1rem;
-  background-color: #073C53;
   background-size: contain;
   background-position: center;
-  background-repeat: no-repeat;
-  border-radius: 2px; }
+  background-repeat: no-repeat; }
+
+.target-row .target-el-1 {
+  background-image: url("../src/medias/img/ET_visuel1.svg"); }
+
+.target-row .target-el-2 {
+  background-image: url("../src/medias/img/ET_visuel2.svg"); }
+
+.target-row .target-el-3 {
+  background-image: url("../src/medias/img/ET_visuel3.svg"); }
+
+.target-row .target-el-4 {
+  background-image: url("../src/medias/img/ET_visuel4.svg"); }
 
 .banner-animate {
   display: flex;
@@ -1055,10 +1146,8 @@ header {
   align-items: center;
   flex-direction: column;
   height: 30vh;
-  padding: 0 10rem;
   margin: 1rem 0 2rem 0;
-  color: #073C53;
-  font-family: 'Montserrat', sans-serif; }
+  color: #073C53; }
   @media screen and (max-width: 1060px) {
     .banner-animate {
       padding: 0 5rem; } }
@@ -1122,7 +1211,6 @@ header {
   align-items: center;
   flex-direction: column;
   height: 80vh;
-  padding: 0 10rem;
   background-color: #073C53; }
   @media screen and (max-width: 1160px) {
     .expose {
@@ -1142,7 +1230,6 @@ header {
 .expose-title h2 {
   margin-bottom: 1.2rem;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase; }
@@ -1177,7 +1264,6 @@ header {
   width: 100%;
   height: 8%;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 400; }
 
@@ -1238,9 +1324,8 @@ header {
   align-items: center;
   flex-direction: column;
   height: 120vh;
-  padding: 0 10rem 1rem 10rem;
+  padding-bottom: 1rem;
   margin-bottom: 0;
-  font-family: 'Montserrat', sans-serif;
   background-image: url("../src/medias/img/shape.svg");
   background-size: contain;
   background-position: center 120%;
@@ -1331,7 +1416,6 @@ header {
   flex-direction: column;
   height: 80vh;
   margin-top: 0;
-  padding: 0 10rem;
   position: relative;
   background-color: #073C53; }
   @media screen and (max-width: 1160px) {
@@ -1354,7 +1438,6 @@ header {
 .speak-title h2 {
   margin-bottom: 1.2rem;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase; }
@@ -1393,7 +1476,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Montserrat', sans-serif;
   width: 100%;
   height: 6%;
   margin-bottom: 1rem;
@@ -1408,7 +1490,6 @@ header {
 
 .speak-row .speak-text {
   width: 50%;
-  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #ffffff;
   letter-spacing: 1px;
@@ -1454,9 +1535,7 @@ header {
   flex-direction: column;
   height: 120vh;
   margin: 0;
-  padding: 0 10rem;
   background-color: #073C53;
-  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   box-sizing: border-box; }
   @media screen and (max-width: 1160px) {
@@ -1572,13 +1651,11 @@ blockquote.twitter-tweet {
   flex-direction: column;
   height: 90vh;
   margin: 0;
-  padding: 0 10rem;
   position: relative;
   background-image: url("../src/medias/img/shape.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center 140%;
-  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   box-sizing: border-box; }
   @media screen and (max-width: 1160px) {
@@ -1733,7 +1810,6 @@ ul.offer-content-list li::before {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 0 10rem;
   position: relative;
   z-index: 10;
   background-image: url("../src/medias/img/shape.svg");
@@ -1769,7 +1845,6 @@ ul.offer-content-list li::before {
 .promotion-title h2 {
   margin-bottom: 1.2rem;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase; }
@@ -1867,15 +1942,17 @@ ul.offer-content-list li::before {
   flex-direction: column;
   height: 80vh;
   margin: 0;
-  padding: 0 10rem;
   position: relative;
   background-color: #073C53;
-  font-family: 'Montserrat', sans-serif;
   color: #ffffff; }
   @media screen and (max-width: 1160px) {
     .organisation {
       justify-content: space-between;
       padding: 3rem 5rem; } }
+
+.organisation-text {
+  font-weight: 400;
+  line-height: 1.2; }
 
 .organisation-exposant-text .span-red {
   font-size: 300; }
@@ -1895,7 +1972,6 @@ ul.offer-content-list li::before {
 .organisation-title h2 {
   margin-bottom: 1.2rem;
   color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   font-weight: 600;
   text-transform: uppercase; }
@@ -1969,8 +2045,7 @@ ul.offer-content-list li::before {
   height: 70%;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ffffff; }
+  background-position: center; }
 
 .organisation-row-2 {
   display: flex;
@@ -1988,6 +2063,18 @@ ul.offer-content-list li::before {
   font-weight: 400;
   line-height: 20px; }
 
+.organisation-exposants-1 .organisation-section-img {
+  background-image: url("../src/medias/img/elodie.jpg"); }
+
+.organisation-exposants-2 .organisation-section-img {
+  background-image: url("../src/medias/img/marie.jpg"); }
+
+.organisation-visitor .organisation-section-img {
+  background-image: url("../src/medias/img/laura.jpg"); }
+
+.organisation-logistic .organisation-section-img {
+  background-image: url("../src/medias/img/sandrine.jpg"); }
+
 footer {
   display: flex;
   justify-content: flex-end;
@@ -1998,7 +2085,6 @@ footer {
   position: relative;
   z-index: 100;
   bottom: 0;
-  font-family: 'Montserrat', sans-serif;
   background-color: #f9f9f9; }
   @media screen and (max-width: 1160px) {
     footer {

@@ -4,7 +4,6 @@
     align-items: center;
     flex-direction: column;
     height: 80vh;
-    padding: 0 10rem;
     background-color: $blue;
     @media screen and (max-width: 1160px) {
         padding: 0 5rem;
@@ -26,7 +25,6 @@
 .expose-title h2 {
     margin-bottom: 1.2rem;
     color: $white;
-    font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     font-weight: 600;
     text-transform: uppercase;
@@ -66,7 +64,6 @@
     width: 100%;
     height: 8%;
     color: $white;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
 }

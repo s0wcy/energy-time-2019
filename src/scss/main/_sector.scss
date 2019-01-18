@@ -4,7 +4,6 @@
     align-items: center;
     flex-direction: column;
     height: 64vh;
-    padding: 0 10rem;
     @media screen and (max-width: 1160px) {
         padding: 0 5rem;
         height: 46vh;
@@ -19,7 +18,6 @@
     width: 100%;
     height: 20%;
     color: $blue;
-    font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     font-weight: 600;
     text-transform: uppercase;
@@ -99,7 +97,6 @@
 .sector-row-section .section-text {
     margin: 1.2rem 0.6rem 0 0.6rem;
     color: $dark-blue;
-    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;

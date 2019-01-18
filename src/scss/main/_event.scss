@@ -3,8 +3,7 @@
     align-items: center;
     flex-direction: column;
     height: 80vh;
-    margin-top: 0;
-    padding: 0 10rem;
+    margin: 0;
     position: relative;
     background-color: $blue;
     @media screen and (max-width: 1160px) {
@@ -30,7 +29,6 @@
 .event-title h2 {
     margin-bottom: 1.2rem;
     color: $white;
-    font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     font-weight: 600;
     text-transform: uppercase;
@@ -101,7 +99,6 @@
 
 .event-row .event-text {
     width: 50%;
-    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     color: $white;
     letter-spacing: 1px;

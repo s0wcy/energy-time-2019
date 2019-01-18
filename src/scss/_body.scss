@@ -4,6 +4,7 @@ html, body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    font-family: 'Multi', sans-serif;
 }
 
 a {
@@ -22,12 +23,14 @@ a {
     height: 80vh;
     box-sizing: border-box;
     margin: 1rem 0;
+    padding: 0 22rem;
 }
 
 .banner {
     width: 100vw;
     height: 40vh;
     box-sizing: border-box;
+    padding: 0 22rem;
 }
 
 .span-red {
