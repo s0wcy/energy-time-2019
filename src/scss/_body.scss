@@ -26,6 +26,38 @@ a {
     padding: 0 18rem;
 }
 
+.container-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: auto;
+    height: 6rem;
+    margin: 1rem 0;
+    @media screen and (max-width: 1160px) {
+        height: 10%;
+    }
+}
+
+.container-title h2 {
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: $white;
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.container-title span {
+    margin-bottom: 1.2rem;
+    width: 65%;
+    max-width: 10rem;
+    height: 0.2rem;
+    background-color: $red;
+    border-radius: 4px;
+}
+
 .banner {
     width: 100vw;
     height: 40vh;
@@ -39,7 +71,8 @@ a {
 }
 
 .container-text {
+    font-family: 'Multi', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1,2;
+    line-height: 1.2;
 }

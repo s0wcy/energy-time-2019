@@ -23,6 +23,35 @@ a {
   margin: 1rem 0;
   padding: 0 18rem; }
 
+.container-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  height: 6rem;
+  margin: 1rem 0; }
+  @media screen and (max-width: 1160px) {
+    .container-title {
+      height: 10%; } }
+
+.container-title h2 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase; }
+
+.container-title span {
+  margin-bottom: 1.2rem;
+  width: 65%;
+  max-width: 10rem;
+  height: 0.2rem;
+  background-color: #E22230;
+  border-radius: 4px; }
+
 .banner {
   width: 100vw;
   height: 40vh;
@@ -34,9 +63,10 @@ a {
   font-weight: 600; }
 
 .container-text {
+  font-family: 'Multi', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 1,2; }
+  line-height: 1.2; }
 
 header {
   display: flex;
@@ -329,31 +359,6 @@ header {
     .event {
       justify-content: space-between;
       padding: 3rem 5rem; } }
-
-/* Event Title */
-.event-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 16%; }
-  @media screen and (max-width: 1160px) {
-    .event-title {
-      height: 10%; } }
-
-.event-title h2 {
-  margin-bottom: 1.2rem;
-  color: #ffffff;
-  font-size: 26px;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.event-title span {
-  width: 8rem;
-  height: 0.2rem;
-  background-color: #E22230;
-  border-radius: 4px; }
 
 /* Event Container */
 .event-content {
@@ -892,29 +897,6 @@ header {
       justify-content: space-between;
       padding: 3rem 5rem; } }
 
-.visitor-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 20%; }
-  @media screen and (max-width: 1160px) {
-    .visitor-title {
-      height: 10%; } }
-
-.visitor-title h2 {
-  margin-bottom: 1.2rem;
-  font-size: 26px;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.visitor-title span {
-  width: 8rem;
-  height: 0.2rem;
-  background-color: #E22230;
-  border-radius: 4px; }
-
 /* Visitor row */
 .visitor-row-1 {
   display: flex;
@@ -1221,30 +1203,6 @@ header {
     .expose {
       padding: 0 5rem; } }
 
-.expose-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 16%; }
-  @media screen and (max-width: 1160px) {
-    .expose-title {
-      height: 10%; } }
-
-.expose-title h2 {
-  margin-bottom: 1.2rem;
-  color: #ffffff;
-  font-size: 26px;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.expose-title span {
-  width: 8rem;
-  height: 0.2rem;
-  background-color: #E22230;
-  border-radius: 4px; }
-
 /* Expose Container */
 .expose-container {
   display: flex;
@@ -1428,31 +1386,6 @@ header {
       justify-content: space-between;
       padding: 3rem 5rem; } }
 
-/* speak Title */
-.speak-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 16%; }
-  @media screen and (max-width: 1160px) {
-    .speak-title {
-      height: 10%; } }
-
-.speak-title h2 {
-  margin-bottom: 1.2rem;
-  color: #ffffff;
-  font-size: 26px;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.speak-title span {
-  width: 8rem;
-  height: 0.2rem;
-  background-color: #E22230;
-  border-radius: 4px; }
-
 /* speak Container */
 .speak-content {
   display: flex;
@@ -1547,29 +1480,6 @@ header {
     .communicate {
       justify-content: space-between;
       padding: 3rem 5rem; } }
-
-.communicate-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 12%; }
-  @media screen and (max-width: 1160px) {
-    .communicate-title {
-      height: 10%; } }
-
-.communicate-title h2 {
-  margin-bottom: 1.2rem;
-  font-size: 26px;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.communicate-title span {
-  width: 8rem;
-  height: 0.2rem;
-  background-color: #E22230;
-  border-radius: 4px; }
 
 /* Communicate container */
 .communicate-container {
@@ -1668,29 +1578,8 @@ blockquote.twitter-tweet {
       justify-content: space-between;
       padding: 3rem 5rem; } }
 
-.offer-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 16%; }
-  @media screen and (max-width: 1160px) {
-    .offer-title {
-      height: 10%; } }
-
 .offer-title h2 {
-  margin: 1.2rem 0;
-  font-size: 26px;
-  font-weight: 600;
-  text-transform: uppercase;
   color: #073C53; }
-
-.offer-title span {
-  width: 8rem;
-  height: 0.2rem;
-  background-color: #E22230;
-  border-radius: 4px; }
 
 /* offer container */
 .offer-container {
@@ -1835,31 +1724,6 @@ ul.offer-content-list li::before {
   z-index: -5;
   background-color: #073C53; }
 
-/* Promotion Title */
-.promotion-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 16%; }
-  @media screen and (max-width: 1160px) {
-    .promotion-title {
-      height: 10%; } }
-
-.promotion-title h2 {
-  margin-bottom: 1.2rem;
-  color: #ffffff;
-  font-size: 26px;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.promotion-title span {
-  width: 8rem;
-  height: 0.2rem;
-  background-color: #E22230;
-  border-radius: 4px; }
-
 /* Promotion container */
 .promotion-container {
   display: flex;
@@ -1961,31 +1825,6 @@ ul.offer-content-list li::before {
 
 .organisation-exposant-text .span-red {
   font-size: 300; }
-
-/* Organisation Title */
-.organisation-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  height: 16%; }
-  @media screen and (max-width: 1160px) {
-    .organisation-title {
-      height: 12%; } }
-
-.organisation-title h2 {
-  margin-bottom: 1.2rem;
-  color: #ffffff;
-  font-size: 26px;
-  font-weight: 600;
-  text-transform: uppercase; }
-
-.organisation-title span {
-  width: 8rem;
-  height: 0.2rem;
-  background-color: #E22230;
-  border-radius: 4px; }
 
 /* Organisation container */
 .organisation-container {

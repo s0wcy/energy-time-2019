@@ -13,36 +13,6 @@
     }
 }
 
-/* speak Title */
-
-.speak-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 16%;
-
-    @media screen and (max-width: 1160px) {
-        height: 10%;
-    }
-}
-
-.speak-title h2 {
-    margin-bottom: 1.2rem;
-    color: $white;
-    font-size: 26px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.speak-title span {
-    width: 8rem;
-    height: 0.2rem;
-    background-color: $red;
-    border-radius: 4px;
-}
-
 /* speak Container */
 
 .speak-content {
