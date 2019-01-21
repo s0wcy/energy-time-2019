@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
     margin: 0;
     position: relative;
     background-image: url('../src/medias/img/shape.svg');
@@ -27,7 +27,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 84%;
+    height: 100%;
     position: relative;
 }
 
@@ -50,12 +50,12 @@
 
 .offer-row-1 {
     width: 100%;
-    height: 84%;
+    height: 88%;
 }
 
 .offer-row-2 {
     width: 100%;
-    height: 16%;
+    height: 12%;
 }
 
 .offer-row .offer-col {
@@ -75,7 +75,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 10%;
+    height: 12%;
     font-size: 18px;
     font-weight: 600;
     color: $red;
@@ -88,14 +88,19 @@
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-    height: 85%;
-    padding: 0 5%;
+    height: 88%;
+    padding: 1rem 5%;
     color: $blue;
 }
 
 .offer-content-subtitle {
+    width: 100%;
+    height: 8%;
+    font-size: 15px;
+    text-align: center;
     font-weight: 600;
     text-align: center;
+    line-height: 1.1;
 }
 
 ul.offer-content-list {
@@ -105,13 +110,14 @@ ul.offer-content-list {
     flex-direction: column;
     width: 100%;
     height: 80%;
+    margin: 0 0 1.5rem 0;
     position: relative;
 }
 
 ul.offer-content-list li::before {
     content: "";
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.65rem;
+    height: 0.65rem;
     position: absolute;
     border-radius: 100%;
     background-color: $red;

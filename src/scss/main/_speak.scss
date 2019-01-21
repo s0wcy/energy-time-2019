@@ -82,7 +82,7 @@
 }
 
 .speak-row .speak-img {
-    width: 48%;
+    width: 46%;
     height: 100%;
     background-color: #fff;
     background-size: cover;
@@ -109,4 +109,13 @@
     @media screen and (max-width: 1160px) {
         padding: 0;
     }
+}
+
+.speak-img-1 {
+    background-image: url('../src/medias/img/11.jpg');
+    background-position: center 15%;
+}
+.speak-img-2 {
+    background-image: url('../src/medias/img/12.jpg');
+    background-position: center 75%;
 }
