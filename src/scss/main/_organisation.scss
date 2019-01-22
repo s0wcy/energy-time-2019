@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    height: 65vh;
     margin: 0;
     position: relative;
     background-color: $blue;
@@ -92,9 +92,9 @@
 }
 
 .organisation-section-img {
-    width: 6rem;
-    height: 70%;
-    background-size: contain;
+    width: 120px;
+    height: 140px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }

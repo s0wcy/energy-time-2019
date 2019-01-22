@@ -63,10 +63,9 @@
 
 .promotion-el {
     display: flex;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: $white;
     border-radius: 2px;
     margin: 0 1rem;
 }
@@ -75,6 +74,7 @@
     width: 65%;
     height: 100%;
     margin-left: 0;
+    background-image: url('../src/medias/img/13.jpg');
 }
 
 .promotion-el-2, .promotion-el-3 {
@@ -82,21 +82,39 @@
     height: 50%;
 }
 
-.promotion-el-2 { margin-bottom: 0.5rem; }
-.promotion-el-3 { margin-top: 0.5rem; }
+.promotion-el-2 {
+    margin-bottom: 0.5rem;
+    background-image: url('../src/medias/img/14.jpg');
+}
+.promotion-el-3 {
+    margin-top: 0.5rem;
+    background-image: url('../src/medias/img/15.jpg');
+}
 
 .promotion-el-4, .promotion-el-5 {
     width: 100%;
     height: 50%;
 }
 
-.promotion-el-4 { margin-bottom: 0.5rem; }
-.promotion-el-5 { margin-top: 0.5rem; }
+.promotion-el-4 {
+    margin-bottom: 0.5rem;
+    background-image: url('../src/medias/img/16.jpg');
+}
+.promotion-el-5 {
+    margin-top: 0.5rem;
+    background-image: url('../src/medias/img/17.jpg');
+}
 
 .promotion-el-6, .promotion-el-7 {
     width: 40%;
     height: 100%;
 }
 
-.promotion-el-6 { margin: 0 0.5rem 0 1rem; }
-.promotion-el-7 { margin: 0 0 0 0.5rem; }
+.promotion-el-6 {
+    margin: 0 0.5rem 0 1rem;
+    background-image: url('../src/medias/img/18.jpg');
+}
+.promotion-el-7 {
+    margin: 0 0 0 0.5rem;
+    background-image: url('../src/medias/img/19.jpg');
+}
