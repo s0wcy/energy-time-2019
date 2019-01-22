@@ -9,6 +9,9 @@
         padding: 0 5rem;
         height: 46vh;
     }
+    @media screen and (max-height: 800px) {
+        height: 60vh;
+    }
 }
 
 .sector-title h2 { color: $blue; }

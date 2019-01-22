@@ -8,9 +8,8 @@
     color: $white;
     box-sizing: border-box;
 
-    @media screen and (max-width: 1160px) {
-        justify-content: space-between;
-        padding: 3rem 5rem;
+    @media screen and (max-height: 800px) {
+        height: 140vh;
     }
 }
 

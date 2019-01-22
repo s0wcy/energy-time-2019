@@ -31,8 +31,8 @@ a {
     box-sizing: border-box;
     margin: 1rem 0;
     padding: 0 20rem;
-    @media screen and (max-width: 1160px) {
-        padding: 0 5rem;
+    @media screen and (max-width: 1370px) {
+        padding: 0 10rem;
     }
 }
 
@@ -44,10 +44,6 @@ a {
     width: auto;
     height: 6rem;
     margin: 1rem 0;
-}
-
-.container-italic-title {
-
 }
 
 .container-title h2 {
@@ -84,8 +80,8 @@ a {
     height: 40vh;
     box-sizing: border-box;
     padding: 0 18rem;
-    @media screen and (max-width: 1160px) {
-        padding: 0 5rem;
+    @media screen and (max-width: 1370px) {
+        padding: 0 10rem;
     }
 }
 

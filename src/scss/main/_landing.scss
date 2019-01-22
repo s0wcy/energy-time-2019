@@ -40,6 +40,10 @@
         height: 40%;
         padding: 0;
     }
+
+    @media screen and (max-height: 800px) {
+        padding: 10rem 0;
+    }
 }
 
 .landing-text {

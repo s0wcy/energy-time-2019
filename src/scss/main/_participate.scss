@@ -68,9 +68,12 @@
     }
 }
 
+.participate-text ul { padding-left: 1rem; }
+
 .participate-text ul li {
     margin: 0.5rem 0;
     position: relative;
+    padding: 0 0.5rem;
 }
 
 .participate-text ul li::before {
@@ -80,7 +83,7 @@
     background-color: $red;
     border-radius: 100%;
     position: absolute;
-    left: -2rem;
+    left: -1rem;
 }
 
 .participate-text p {

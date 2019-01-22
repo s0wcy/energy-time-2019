@@ -10,8 +10,8 @@
     background-size: contain;
     background-position: center 190%;
     background-repeat: no-repeat;
-    @media screen and (max-width: 1160px) {
-        padding: 0 5rem;
+    @media screen and (max-height: 800px) {
+        height: 156vh;
     }
 }
 
