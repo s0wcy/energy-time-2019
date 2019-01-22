@@ -7,8 +7,8 @@
     position: relative;
     background-color: $blue;
     color: $white;
-    @media screen and (max-height: 800px) {
-        height: 85vh;
+    @media screen and (max-height: 900px) {
+        height: 100vh;
     }
 }
 
@@ -44,6 +44,9 @@
 .organisation-row-1 {
     height: 60%;
     margin-bottom: 1rem;
+    @media screen and (max-height: 900px) {
+        height: 50%;
+    }
 }
 
 .organisation-section {

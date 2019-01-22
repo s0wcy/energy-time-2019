@@ -6,9 +6,6 @@
     height: 30vh;
     margin: 1rem 0 2rem 0;
     color: $blue;
-    @media screen and (max-width: 1060px) {
-        padding: 0 5rem;
-    }
 }
 
 .banner-animate .animate-title {

@@ -30,11 +30,8 @@ header {
     text-transform: uppercase;
     font-size: 14px;
     color: $blue;
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1366px) {
         width: 60%;
-    }
-    @media screen and (max-width: 1160px) {
-        display: none;
     }
 }
 
@@ -66,9 +63,6 @@ header {
     flex-direction: row;
     width: 8%;
     height: 100%;
-    @media screen and (max-width: 1160px) {
-        display: none;
-    }
 }
 
 .header-login-el {
@@ -78,8 +72,8 @@ header {
     background-repeat: no-repeat;
 }
 
-.icon-login { background-image: url("../src/medias/img/icons/log-in.svg"); }
-.icon-register { background-image: url("../src/medias/img/icons/user-plus.svg"); }
+// .icon-login { background-image: url("../src/medias/img/icons/log-in.svg"); }
+// .icon-register { background-image: url("../src/medias/img/icons/user-plus.svg"); }
 .icon-member { background-image: url("../src/medias/img/icons/lock.svg"); }
 
 /* Burger */

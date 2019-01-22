@@ -4,11 +4,6 @@
     align-items: center;
     flex-direction: column;
     height: 45vh;
-    @media screen and (max-width: 1160px) {
-        height: 30vh;
-        padding: 0 5rem;
-        text-align: center;
-    }
 }
 
 .partners-title {

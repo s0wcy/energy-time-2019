@@ -9,10 +9,6 @@ footer {
     z-index: 100;
     bottom: 0;
     background-color: $cream;
-    @media screen and (max-width: 1160px) {
-        justify-content: space-between;
-        height: 40vh;
-    }
 }
 
 .footer-part {
@@ -23,9 +19,6 @@ footer {
     width: 75%;
     height: auto;
     color: $blue;
-    @media screen and (max-width: 1160px) {
-        width: 90%;
-    }
 }
 
 /* upper footer */
@@ -41,12 +34,6 @@ footer {
     width: 25%;
     height: 100%;
     position: relative;
-}
-
-.upper-footer .upper-footer-el-2 {
-    @media screen and (max-width: 1160px) {
-        display: none;
-    }
 }
 
 .upper-footer .upper-footer-el:not(:last-child) { margin-right: 1rem; }

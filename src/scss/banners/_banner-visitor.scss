@@ -21,9 +21,6 @@
     flex-direction: column;
     width: 20%;
     height: 100%;
-    @media screen and (max-width: 1160px) {
-        height: 40%;
-    }
 }
 
 .banner-visitor-el .visitor-icon {
@@ -35,10 +32,6 @@
     background-size: 55%;
     background-repeat: no-repeat;
     margin-bottom: 1rem;
-    @media screen and (max-width: 1160px) {
-        width: 4rem;
-        height: 4rem;
-    }
 }
 
 .banner-visitor-el span {
