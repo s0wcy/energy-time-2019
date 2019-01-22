@@ -49,6 +49,7 @@
 }
 
 .landing-text h2 {
+    text-align: left;
     color: $blue;
     font-size: 28px;
     font-weight: 900;
@@ -57,14 +58,14 @@
 
 .landing-text h3 {
     color: $red;
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .landing-text p {
     color: $dark-blue;
     opacity: 0.5;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     margin-top: 2.4rem;
     @media screen and (max-width: 1160px) {
@@ -90,6 +91,7 @@
     border: transparent;
     background-color: $red;
     color: $white;
+    border: 2px solid $white;
 }
 
 .landing-img {

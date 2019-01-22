@@ -4,7 +4,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     padding: 2rem 20rem;
     color: $blue;
     background-color: $blue;
@@ -33,13 +33,26 @@
 
 .banner-sector-el {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
     width: 25%;
     height: 100%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+.banner-sector-el h4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 16%;
+    background-color: $white;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .banner-sector-el:not(:last-child) {
@@ -51,17 +64,12 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 16%;
+    height: 100%;
     background-color: $cream;
     border-radius: 2px;
 }
 
-.banner-sector-el .sector-el h4 {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.banner-sector-el-1 { background-image: url('../src/medias/img/visitorat1.jpg'); }
-.banner-sector-el-2 { background-image: url('../src/medias/img/visitorat2.jpg'); }
-.banner-sector-el-3 { background-image: url('../src/medias/img/visitorat3.jpg'); }
-.banner-sector-el-4 { background-image: url('../src/medias/img/visitorat4.jpg'); }
+.banner-sector-el-1 .sector-el { background-image: url('../src/medias/img/visitorat1.jpg'); }
+.banner-sector-el-2 .sector-el { background-image: url('../src/medias/img/visitorat2.jpg'); }
+.banner-sector-el-3 .sector-el { background-image: url('../src/medias/img/visitorat3.jpg'); }
+.banner-sector-el-4 .sector-el { background-image: url('../src/medias/img/visitorat4.jpg'); }

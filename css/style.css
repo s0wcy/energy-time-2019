@@ -26,7 +26,7 @@ a {
   height: 80vh;
   box-sizing: border-box;
   margin: 1rem 0;
-  padding: 0 18rem; }
+  padding: 0 20rem; }
   @media screen and (max-width: 1160px) {
     .container {
       padding: 0 5rem; } }
@@ -44,7 +44,7 @@ a {
   margin-top: 1.2rem;
   margin-bottom: 0.5rem;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase; }
@@ -59,7 +59,7 @@ a {
 
 .container-text {
   font-family: 'Multi', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: 1px; }
@@ -314,6 +314,7 @@ header {
   flex-direction: column; }
 
 .landing-text h2 {
+  text-align: left;
   color: #073C53;
   font-size: 28px;
   font-weight: 900;
@@ -321,13 +322,13 @@ header {
 
 .landing-text h3 {
   color: #E22230;
-  font-size: 26px;
+  font-size: 22px;
   font-weight: 600; }
 
 .landing-text p {
   color: #0B3545;
   opacity: 0.5;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   margin-top: 2.4rem; }
   @media screen and (max-width: 1160px) {
@@ -350,7 +351,8 @@ header {
 .landing-btn:hover {
   border: transparent;
   background-color: #E22230;
-  color: #ffffff; }
+  color: #ffffff;
+  border: 2px solid #ffffff; }
 
 .landing-img {
   width: 58%;
@@ -367,7 +369,7 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 80vh;
+  height: 70vh;
   margin: 0;
   position: relative;
   background-color: #073C53; }
@@ -497,7 +499,7 @@ header {
   background-image: url("../src/medias/img/france.svg"); }
 
 .banner-event-col-1 .banner-event-title {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 600;
   text-align: left;
   text-transform: uppercase;
@@ -507,7 +509,7 @@ header {
   position: relative; }
 
 .banner-event-col-1 .event-list-el {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   color: #ffffff;
   margin: 0.5rem 0; }
@@ -578,7 +580,7 @@ header {
   letter-spacing: 1px;
   line-height: 1.2;
   width: 45%;
-  height: 100%;
+  height: 70%;
   margin-left: 2rem; }
   @media screen and (max-width: 1160px) {
     .participate-text {
@@ -703,7 +705,7 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  height: 64vh;
+  height: 50vh;
   margin: 0; }
   @media screen and (max-width: 1160px) {
     .sector {
@@ -995,8 +997,8 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 16px;
-  font-weight: 400; }
+  font-size: 14px;
+  font-weight: 600; }
 
 .icon-bulb {
   background-image: url("../src/medias/img/icons/bulb.svg"); }
@@ -1019,7 +1021,7 @@ header {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  height: 35vh;
+  height: 40vh;
   padding: 2rem 20rem;
   color: #073C53;
   background-color: #073C53; }
@@ -1045,13 +1047,25 @@ header {
 
 .banner-sector-el {
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
   width: 25%;
   height: 100%;
   background-size: contain;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  box-sizing: border-box; }
+
+.banner-sector-el h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 16%;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: 400; }
 
 .banner-sector-el:not(:last-child) {
   margin-right: 1rem; }
@@ -1061,24 +1075,20 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 16%;
+  height: 100%;
   background-color: #f9f9f9;
   border-radius: 2px; }
 
-.banner-sector-el .sector-el h4 {
-  font-size: 14px;
-  font-weight: 400; }
-
-.banner-sector-el-1 {
+.banner-sector-el-1 .sector-el {
   background-image: url("../src/medias/img/visitorat1.jpg"); }
 
-.banner-sector-el-2 {
+.banner-sector-el-2 .sector-el {
   background-image: url("../src/medias/img/visitorat2.jpg"); }
 
-.banner-sector-el-3 {
+.banner-sector-el-3 .sector-el {
   background-image: url("../src/medias/img/visitorat3.jpg"); }
 
-.banner-sector-el-4 {
+.banner-sector-el-4 .sector-el {
   background-image: url("../src/medias/img/visitorat4.jpg"); }
 
 .banner-target {
@@ -1091,7 +1101,7 @@ header {
   background-image: url("../src/medias/img/shape.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -280%;
+  background-position: center -200%;
   color: #073C53;
   font-size: 22px;
   font-weight: 600;
@@ -1238,8 +1248,10 @@ header {
 .expose-col-1 .expose-text {
   display: flex;
   width: 100%;
-  height: 8%;
-  color: #ffffff;
+  height: 8%; }
+
+.testimonial {
+  color: #073C53;
   font-size: 16px;
   font-weight: 400; }
 
@@ -1309,7 +1321,7 @@ header {
   margin-bottom: 0;
   background-image: url("../src/medias/img/shape.svg");
   background-size: contain;
-  background-position: center 120%;
+  background-position: center 190%;
   background-repeat: no-repeat; }
   @media screen and (max-width: 1160px) {
     .exhibitors {
@@ -1353,7 +1365,6 @@ header {
   overflow: hidden; }
 
 .exhibitors-list .exhibitor {
-  background-color: #073C53;
   border-radius: 2px;
   width: 6rem;
   height: 6rem;
@@ -1389,6 +1400,152 @@ header {
   height: 25%;
   margin-bottom: 4rem;
   font-style: italic; }
+
+.exhibitor {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.exhibitor-1 {
+  background-image: url("../src/medias/img/participants/01.gif"); }
+
+.exhibitor-2 {
+  background-image: url("../src/medias/img/participants/02.gif"); }
+
+.exhibitor-3 {
+  background-image: url("../src/medias/img/participants/03.gif"); }
+
+.exhibitor-4 {
+  background-image: url("../src/medias/img/participants/04.gif"); }
+
+.exhibitor-5 {
+  background-image: url("../src/medias/img/participants/05.gif"); }
+
+.exhibitor-6 {
+  background-image: url("../src/medias/img/participants/06.gif"); }
+
+.exhibitor-7 {
+  background-image: url("../src/medias/img/participants/07.gif"); }
+
+.exhibitor-8 {
+  background-image: url("../src/medias/img/participants/08.gif"); }
+
+.exhibitor-9 {
+  background-image: url("../src/medias/img/participants/09.gif"); }
+
+.exhibitor-10 {
+  background-image: url("../src/medias/img/participants/10.gif"); }
+
+.exhibitor-11 {
+  background-image: url("../src/medias/img/participants/11.gif"); }
+
+.exhibitor-12 {
+  background-image: url("../src/medias/img/participants/12.gif"); }
+
+.exhibitor-13 {
+  background-image: url("../src/medias/img/participants/13.gif"); }
+
+.exhibitor-14 {
+  background-image: url("../src/medias/img/participants/14.gif"); }
+
+.exhibitor-15 {
+  background-image: url("../src/medias/img/participants/15.gif"); }
+
+.exhibitor-16 {
+  background-image: url("../src/medias/img/participants/16.gif"); }
+
+.exhibitor-17 {
+  background-image: url("../src/medias/img/participants/17.gif"); }
+
+.exhibitor-18 {
+  background-image: url("../src/medias/img/participants/18.gif"); }
+
+.exhibitor-19 {
+  background-image: url("../src/medias/img/participants/19.gif"); }
+
+.exhibitor-20 {
+  background-image: url("../src/medias/img/participants/20.gif"); }
+
+.exhibitor-21 {
+  background-image: url("../src/medias/img/participants/21.gif"); }
+
+.exhibitor-22 {
+  background-image: url("../src/medias/img/participants/22.jpg"); }
+
+.exhibitor-23 {
+  background-image: url("../src/medias/img/participants/23.gif"); }
+
+.exhibitor-24 {
+  background-image: url("../src/medias/img/participants/24.gif"); }
+
+.exhibitor-25 {
+  background-image: url("../src/medias/img/participants/25.gif"); }
+
+.exhibitor-26 {
+  background-image: url("../src/medias/img/participants/26.gif"); }
+
+.exhibitor-27 {
+  background-image: url("../src/medias/img/participants/27.gif"); }
+
+.exhibitor-28 {
+  background-image: url("../src/medias/img/participants/28.gif"); }
+
+.exhibitor-29 {
+  background-image: url("../src/medias/img/participants/29.gif"); }
+
+.exhibitor-30 {
+  background-image: url("../src/medias/img/participants/30.gif"); }
+
+.exhibitor-31 {
+  background-image: url("../src/medias/img/participants/31.gif"); }
+
+.exhibitor-32 {
+  background-image: url("../src/medias/img/participants/32.gif"); }
+
+.exhibitor-33 {
+  background-image: url("../src/medias/img/participants/33.gif"); }
+
+.exhibitor-34 {
+  background-image: url("../src/medias/img/participants/34.gif"); }
+
+.exhibitor-35 {
+  background-image: url("../src/medias/img/participants/35.gif"); }
+
+.exhibitor-36 {
+  background-image: url("../src/medias/img/participants/36.gif"); }
+
+.exhibitor-37 {
+  background-image: url("../src/medias/img/participants/37.gif"); }
+
+.exhibitor-38 {
+  background-image: url("../src/medias/img/participants/38.gif"); }
+
+.exhibitor-39 {
+  background-image: url("../src/medias/img/participants/39.gif"); }
+
+.exhibitor-40 {
+  background-image: url("../src/medias/img/participants/40.gif"); }
+
+.exhibitor-41 {
+  background-image: url("../src/medias/img/participants/41.gif"); }
+
+.exhibitor-42 {
+  background-image: url("../src/medias/img/participants/42.gif"); }
+
+.exhibitor-43 {
+  background-image: url("../src/medias/img/participants/43.gif"); }
+
+.exhibitor-44 {
+  background-image: url("../src/medias/img/participants/44.gif"); }
+
+.exhibitor-45 {
+  background-image: url("../src/medias/img/participants/45.gif"); }
+
+.exhibitor-46 {
+  background-image: url("../src/medias/img/participants/46.gif"); }
+
+.exhibitor-47 {
+  background-image: url("../src/medias/img/participants/47.gif"); }
 
 .speak {
   display: flex;
